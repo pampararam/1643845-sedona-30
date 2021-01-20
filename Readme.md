@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Долгова](https://up.htmlacademy.ru/htmlcss/30/user/1643845).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Германова](https://htmlacademy.ru/profile/germanova).
 
 ---
 
