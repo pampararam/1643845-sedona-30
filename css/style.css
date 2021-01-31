@@ -1,0 +1,258 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-blue: #81B3D2;
+  --basic-neutral: #EEEEEE;
+  --basic-dark: #888888;
+  --basic-brown: #766357;
+  --basic-text-grey: #333333;
+  --basic-black: #000000;
+  --hover-blue: #669EC0;
+  --pressing-blue: #5496BD;
+  --hover-brown: #604E43;
+  --pressing-brown: #503E33;
+  --special-grey: #F2F2F2;
+  --special-darc-grey: #EBEBEB;
+  --special-form-grey: #E5E5E5;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-text-grey);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 30%;
+}
+
+.site-navigation a:active {
+  color: var(--basic-brown);
+}
+
+.title-section {
+  text-align: center;
+  background-color: var(--basic-blue);
+  background-image: url("..\img\bgindex.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom ,center top;
+  background-size: 100% 57px , cover;
+}
+
+.reason-exceiience {
+  text-align: center;
+}
+
+.reason-exceiience h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.first-reason,
+.second-reason {
+  line-height: 21px;
+  background-color: var(--basic-blue);
+}
+
+.reason-name {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.reason-number,
+.reason-description,
+.reason-name {
+  color: var(--basic-white);
+}
+
+.recommendation-list {
+  color: var(--basic-text-grey);
+  list-style: none;
+  text-align: center;
+}
+
+.recommendation-name {
+  font-size: 21px;
+  line-height: 21px;
+  font-style: bold;
+}
+
+.recommendation-item:nth-child(2) {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.reason-item {
+  background-color: var(--basic-neutral);
+  list-style: none;
+}
+
+.reason-name {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.reason-number,
+.reason-description {
+  color: var(--basic-text-grey);
+}
+
+.hotel-reservations h2 {
+  color: var(--basic-black);
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.button,
+.button-hover,
+.search-open {
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  background-color: var(--basic-brown);
+  border: none;
+}
+
+.button-hover:hover {
+  background-color: var(--hover-brown);
+  border: none;
+  outline: none;
+}
+
+/*.search-open:focus {
+  color: var(--basic-white);
+  background-color: rgba(80, 62, 51, 1);
+  border: none;
+  outline: none;
+}*/
+
+.contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  font-style: Bold;
+}
+
+.contact-hashteg {
+  color: var(--basic-black);
+}
+
+.telephone {
+  color: var(--basic-black);
+}
+
+.social-list {
+  list-style: none;
+   background-color: var(--basic-blue);
+}
+
+.social-button {
+  background-color: var(--basic-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--hover-blue);
+}
+
+.social-button:active {
+  background-color: var(--pressing-blue);
+}
+
+.social-button:active path {
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.search-form label,
+.search-form input {
+  font: inherit;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.search-form input {
+  background-color: var(--special-grey);
+  border: none;
+}
+
+.search-form input:hover {
+  background-color: var(--special-darc-grey);
+  border: none;
+}
+
+.search-form input:focus {
+  background-color: var(--basic-white);
+  outline: none;
+}
+.search-form input:visited {
+  background-color: var(--basic-white);
+  outline: none;
+}
+
+.find {
+  font: inherit;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  font-style: bold;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.find:hover {
+  background-color: var(--hover-blue);
+  outline: none;
+  border: none;
+}
+.find:focus {
+  background-color: var(--hover-blue);
+  outline: none;
+  border: none;
+}
+
+.find:active {
+  background-color: var(--pressing-blue);
+  outline: none;
+  border: none;
+}
