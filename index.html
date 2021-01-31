@@ -5,15 +5,17 @@
   <meta charset="utf-8">
 
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="img\favicon180.ico">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
+  <header class="page-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li>
           <a href="blank.html">Информация</a>
         </li>
@@ -28,139 +30,151 @@
         </li>
       </ul>
       <a>
-        <img src="img\logo.svg" width="138" height="70" alt="логотип сайта">
+        <img class="main-header-logo" src="img\logo1.svg" width="138" height="70" alt="логотип сайта">
       </a>
     </nav>
   </header>
   <main class="container">
-    <div>
-      <img src="img\bg index.jpg" width="1200" height="509" alt="фото города">
+    <div class="title-section">
+      <!--<img src="img\bgindex.jpg" alt="фото горы сидона" width="1200px" height="509px">-->
       <img src="img\welcome.svg" width="456,65" height="
       350,88" alt="логотип welcome sedona">
     </div>
-    <div>
+    <div class="reason-exceiience">
       <h2>Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
-    <section>
-      <h2>Настоящий<br>
+    <section class="first-reason">
+      <h2 class="reason-name">Настоящий<br>
               городок</h2>
-      <p>— №1 —</p>
-      <p>Седона - не аттракцион для туристов, там
+      <p class="reason-number">— №1 —</p>
+      <p class="reason-description">Седона - не аттракцион для туристов, там
         <br> течёт своя жизнь</p>
-      <img src="img\flag.jpg" width="800" height="256" alt="фото гостиницы">
+      <img class="first-reason-img" src="img\flag.jpg" width="800" height="256" alt="фото гостиницы">
     </section>
-    <section>
-      <ul>
-        <li>
-          <img src="img\house.svg" width="75" height="72" alt="иконка дом">
-          <h2>Жильё</h2>
-          <p>Рекомендуем пожить в настоящем
+    <section class="useful-recommendation">
+      <ul class="recommendation-list">
+        <li class="recommendation-item">
+          <img class="recomendation-img" src="img\house.svg" width="75" height="72" alt="иконка дом">
+          <h2 class="recommendation-name">Жильё</h2>
+          <p class="recommendation-info">Рекомендуем пожить в настоящем
             <br> мотеле, всё как в кино!</p>
         </li>
-        <li>
-          <img src="img\burger.svg" width="75" height="70" alt="иконка еда">
-          <h2>Еда</h2>
-          <p>Всегда заказывайте фирменный бургер,
+        <li class="recommendation-item">
+          <img class="recomendation-img" src="img\burger.svg" width="75" height="70" alt="иконка еда">
+          <h2 class="recommendation-name">Еда</h2>
+          <p class="recommendation-info">Всегда заказывайте фирменный бургер,
             <br> вы не разочаруетесь!</p>
         </li>
-        <li>
-          <img src="img\present.svg" width="64" height="77" alt="иконка сувениры">
-          <h2>Сувениры</h2>
-          <p>Не только китайского, но и местного
+        <li class="recommendation-item">
+          <img class="recomendation-img" src="img\present.svg" width="64" height="77" alt="иконка сувениры">
+          <h2 class="recommendation-name">Сувениры</h2>
+          <p class="recommendation-info">Не только китайского, но и местного
             <br> производства!
           </p>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Там есть<br>
+    <section class="second-reason">
+      <h2 class="reason-name">Там есть<br>
             Мост дьявола</h2>
-      <p>— №2 —</p>
-      <p>Да, по нему можно пройти! Если конечно
+      <p class="reason-number">— №2 —</p>
+      <p class="reason-description">Да, по нему можно пройти! Если конечно
         <br> вы осмелитесь</p>
-      <img src="img\most.jpg" width="800" height="256" alt=мост пропасть>
+      <img class="second-reason-img" src="img\most.jpg" width="800" height="256" alt=мост пропасть>
     </section>
-    <section>
-      <ul>
-        <li>
-          <h2>небольшая<br>
+    <section class="other-reason">
+      <ul class="reason-list">
+        <li class="reason-item">
+          <h2 class="reason-name">небольшая<br>
                     площадь</h2>
-          <p>— №3 —</p>
-          <p>все достопримечательности
+          <p class="reason-number">— №3 —</p>
+          <p class="reason-description">все достопримечательности
             <br> находятся очень близко</p>
         </li>
-        <li>
-          <h2>красивая<br>
+        <li class="reason-item">
+          <h2 class="reason-name">красивая<br>
                     дорога</h2>
-          <p>— №4 —</p>
-          <p>ехать в седону из лас-вегаса совсем
+          <p class="reason-number">— №4 —</p>
+          <p class="reason-description">ехать в седону из лас-вегаса совсем
             <br> не скучно!</p>
         </li>
-        <li>
-          <h2>мало<br>
+        <li class="reason-item">
+          <h2 class="reason-name">мало<br>
                     туристов</h2>
-          <p>— №5 —</p>
-          <p>большинство едет в гранд каньон
+          <p class="reason-number">— №5 —</p>
+          <p class="reason-description">большинство едет в гранд каньон
             <br> и толпится там</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="hotel-reservations">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,
         <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="button" form="search hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <button class="button button-hover search-open" type="button" form="search hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
-    <section>
+    <section class="map-img">
       <img src="img\map.jpg" width="1199" height="594" alt="карта">
     </section>
   </main>
-  <footer>
-    <section>
-      <p>#visitSEDONA</p>
-      <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+  <footer class="page-footer">
+    <section class="contacts">
+      <p class="contact-hashteg">#visitSEDONA</p>
+      <a class="telephone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
     </section>
-    <section>
-      <ul>
-        <li>
-          <a href="#">Твиттер</a>
+    <section class="social-contact">
+      <ul class="social-list">
+        <li >
+          <a class="social-button" href="#">Твиттер</a>
           <img src="img\twitter.svg" alt="Твиттер">
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button"  href="#">Фейсбук</a>
           <img src="img\facebook.svg" alt="Фейсбук">
         </li>
         <li>
-          <a href="#">Youtube</a>
+          <a class="social-button" href="#">Youtube</a>
           <img src="img\youtube11.svg" alt="ютуб">
         </li>
       </ul>
     </section>
-    <section>
+    <section class="footer-copyright">
       <p>Website by</p>
       <a href="img\html.png" >HTML Academy</a>
     </section>
   </footer>
-  <section>
-    <form action="https://echo.htmlacademy.ru" method="post" id="search hotel">
-      <div>
+  <section class="search-hotel-form">
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="post" id="search hotel">
+      <div class="form-part date-part">
         <label for="date cheсk-in">Дата заезда:</label>
-        <input type="date" name="cheсk-in" id="date cheсk-in" value="2017-04-24">
+        <input class="date-field" type="date" name="cheсk-in" id="date cheсk-in" value="2017-04-24">
+        <div class="calendar">
+          <img src="img\calendar.svg" alt="календарь">
+        </div>
       </div>
-      <div>
+      <div class="form-part date-part">
         <label for="date exit">Дата выезда:</label>
-        <input type="date" name="exit" id="date exit" value="2017-07-04">
+        <input class="date-field" type="date" name="exit" id="date exit" value="2017-07-04">
+        <div class="calendar">
+          <img src="img\calendar.svg" alt="календарь">
+        </div>
       </div>
-      <div>
+      <div class="form-part people-adult">
         <label for="number-adult">Взрослые:</label>
-        <input type="number" name="adult" id="number-adult" min="1" max="6" value="2">
-        <label for="number-child">Дети:</label>
-        <input type="number" name="child" id="number-child" min="0" max="6" value="0">
+        <div class="number-choice">
+         <input type="number" name="adult" id="number-adult" min="1" max="6" value="2">
+        </div>
       </div>
-      <div class="buttons">
-        <button>Найти</button>
+      <div class="form-part people-children" >
+        <label for="number-child">Дети:</label>
+        <div class="number-choice" >
+         <input type="number" name="child" id="number-child" min="0" max="6" value="0">
+        </div>
+      </div>
+      <div class="find-hotel">
+        <button class="find">Найти</button>
       </div>
     </form>
   </section>
