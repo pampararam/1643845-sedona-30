@@ -118,14 +118,13 @@ img {
   list-style: none;
 }
 
-.reason-name {
+.reason-list h2 {
   color: var(--basic-black);
   font-size: 21px;
   line-height: 21px;
 }
 
-.reason-number,
-.reason-description {
+.reason-list p {
   color: var(--basic-text-grey);
 }
 
@@ -255,4 +254,139 @@ img {
   background-color: var(--pressing-blue);
   outline: none;
   border: none;
+}
+
+.conditions-list {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  background-image: url("../img/background2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.conditions-list legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.price-day label {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.price-day p {
+text-align: center;
+}
+
+.but-show {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid var(--basic-white);
+  background: transparent;
+}
+
+.found-results h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.output-of-result {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.output-of-result h3 {
+  color: var(--basic-black);
+}
+.sorting-imputs {
+  list-style: none;
+}
+
+
+.sort-imput a {
+  color: var(--basic-black);
+  opacity: 30%;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--basic-blue);
+}
+
+.sort-imput a:hover {
+  color: var(--basic-blue);
+}
+
+.sort-imput a:active {
+  color: var(--basic-black);
+  text-decoration: none;
+  opacity: 100%;
+}
+.sort-imput a:target {
+  color: var(--basic-blue);
+  text-decoration: none;
+}
+
+.current a {
+  color: var(--basic-blue);
+  text-decoration: none;
+}
+
+.searched-list li {
+  list-style: none;
+}
+
+.searched-item h2 {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.searched-item h2:hover  {
+  color: var(--basic-blue) ;
+}
+
+.searched-item h2:active {
+  color: var(--basic-black);
+  opacity: 30%;
+}
+
+.button-blue {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.button-blue:hover {
+  background-color: var(--hover-blue);
+}
+
+.button-blue:active {
+  background-color: var(--pressing-blue);
+  color:  var(--basic-white) ;
+}
+
+.button-brown {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.button-brown:hover {
+  background-color: var(--hover-brown);
+}
+
+.button-brown:active {
+  background-color: var(--pressing-brown);
 }
