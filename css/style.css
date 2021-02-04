@@ -47,7 +47,7 @@ img {
   font-weight: 700;
   line-height: 26px;
   color: var(--basic-black);
-
+  width: 1200px;
   margin-bottom: 0px;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
@@ -93,13 +93,14 @@ img {
   background-size: 100% 57px , cover;
   background-color:var(--basic-blue);
   margin: 0px;
+  width: 1200px;
 }
 
 .reason-exceiience {
   display: grid;
   grid-template-rows: 1fr 1fr;
   outline: 5px solid rgba(212, 25, 150, 0.7);
-
+  width: 1200px;
   text-align: center;
   margin-top: 42,5px;
 }
