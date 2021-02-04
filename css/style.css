@@ -22,8 +22,16 @@ body {
   font-weight: 400;
   color: var(--basic-text-grey);
   text-transform: uppercase;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
+.page {
+  height: 100%;
+}
 a {
   text-decoration: none;
 }
@@ -34,13 +42,27 @@ img {
 }
 
 .main-navigation {
+  display: grid;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
   color: var(--basic-black);
+
+  margin-bottom: 0px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+
+
 }
 
-.site-navigation {
+.main-header-logo {
+  justify-self: center;
+  Width:138px;
+  Height: 70px;
+  left: 138px;
+}
+
+.site-navigation li {
   list-style: none;
 }
 
@@ -61,28 +83,58 @@ img {
   color: var(--basic-brown);
 }
 
-.title-section {
+.title-section {outline: 5px solid rgba(25, 11, 228, 0.7);
+  outline-offset: -5px;
   text-align: center;
-  background-color: var(--basic-blue);
-  background-image: url("..\img\bgindex.jpg");
+  background-image:url(../img/mask.png),
+                   url("../img/bgindex.jpg");
   background-repeat: no-repeat;
   background-position: center bottom ,center top;
   background-size: 100% 57px , cover;
+  background-color:var(--basic-blue);
+  margin: 0px;
 }
 
 .reason-exceiience {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  outline: 5px solid rgba(212, 25, 150, 0.7);
+
   text-align: center;
+  margin-top: 42,5px;
 }
 
 .reason-exceiience h2 {
+  outline: 5px solid rgba(212, 25, 150, 0.7);
   font-size: 21px;
   line-height: 26px;
+
+}
+.reason-exceiience p {
+  outline: 5px solid rgba(131, 212, 25, 0.7);
+  margin-bottom: 51px;
 }
 
+.first-reason {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0px;
+  width: 1200px;
+  height: 256px;
+}
+.first-reason-text {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-self: center;
+}
+.first-reason-img {
+  margin:0px;
+}
 .first-reason,
 .second-reason {
   line-height: 21px;
   background-color: var(--basic-blue);
+  text-align: center;
 }
 
 .reason-name {
@@ -96,10 +148,21 @@ img {
   color: var(--basic-white);
 }
 
+.useful-recommendation {
+margin: 0px;
+width: 1200px;
+height: 330px;
+outline: 5px solid rgba(131, 212, 25, 0.7);
+}
+
 .recommendation-list {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ margin: 0px;
   color: var(--basic-text-grey);
   list-style: none;
   text-align: center;
+
 }
 
 .recommendation-name {
@@ -113,8 +176,18 @@ img {
   line-height: 21px;
 }
 
+.recommendation-item {
+  display: grid;
+  grid-template-rows: m1fr min-content 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.recommendation-name {
+  align-self: center;
+}
 .reason-item {
-  background-color: var(--basic-neutral);
   list-style: none;
 }
 
@@ -126,13 +199,61 @@ img {
 
 .reason-list p {
   color: var(--basic-text-grey);
+
+}
+
+.second-reason {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 1200px;
+  height: 256px;
+  margin:0px;
+  outline: 5px solid rgba(131, 212, 25, 0.7);
+}
+.second-reacon-text {
+ order: 1;
+}
+
+.other-reason {
+  width: 1200px;
+  outline: 5px solid rgba(153, 25, 212, 0.7);
+  margin: 0px;
+  background-color: var(--basic-neutral);
+}
+.reason-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:0px
+}
+.reason-list li {
+  text-align: center;
+  margin-bottom: 54px;
+  margin-top: 47px;
+}
+
+.hotel-reservations {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  width: 1200px;
+  height: 291px;
+  outline: 5px solid rgba(146, 212, 25, 0.7);
+  margin: 0px;
+  text-align: center;
 }
 
 .hotel-reservations h2 {
+  text-align: center;
   color: var(--basic-black);
   font-size: 30px;
   line-height: 24px;
+  margin-top: 58px;
 }
+.hotel-reservations .button {
+  width: 568px;
+  height: 86px;
+}
+
 
 .button,
 .button-hover,
@@ -158,6 +279,13 @@ img {
   outline: none;
 }*/
 
+.page-footer {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  outline: 5px solid rgba(146, 212, 25, 0.7);
+  width: 1200px;
+}
+
 .contacts {
   font-size: 21px;
   line-height: 26px;
@@ -174,6 +302,9 @@ img {
 }
 
 .social-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
   list-style: none;
    background-color: var(--basic-blue);
 }
