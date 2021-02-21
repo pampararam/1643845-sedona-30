@@ -33,59 +33,63 @@
     </nav>
   </header>
   <main>
-    <div>
-      <!---<img src="img\background2.jpg" width="1200" height="217" alt="фото города">-->
-    </div>
     <section class="conditions-list">
-      <!--<h1>фильтр товаров</h1>-->
+      <h1 class="visually-hidden">фильтр товаров</h1>
       <form class="condition-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="infrastructure">
-          <legend>Инфраструктура:</legend>
-          <ul class="filter-option-list">
-            <li class="filter-option">
-              <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
-              <label for="filter-swimming-pool">Бассейн</label>
-            </li>
-            <li class="filter-option">
-              <input type="checkbox" name="parking" id="filter-parking">
-              <label for="filter-parking">Паркинг</label>
-            </li>
-            <li class="filter-option">
-              <input type="checkbox" name="wi-fi" id="filter-wi-fi">
-              <label for="filter-wi-fi">wi-fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="type-of-housing">
-          <legend>Тип жилья:</legend>
-          <ul class="filter-option-list">
-            <li class="filter-option">
-              <input type="checkbox" name="hotel" id="filter-hotel" checked>
-              <label for="filter-hotel">Гостиница</label>
-            </li>
-            <li class="filter-option">
-              <input type="checkbox" name="motel" id="filter-motel" checked>
-              <label for="filter-motel">Мотель</label>
-            </li>
-            <li class="filter-option">
-              <input type="checkbox" name="apartments" id="filter-apartments" checked>
-              <label for="filter-apartments">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="price-day">
-            <label for="dayscount">Стоимость в сутки (Р):</label>
-            <div class="table-price">
-              <p class="min-price">от 0</p>
-              <p class="max-price">До 3000</p>
+        <div class="filtr-checkbox">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура:</legend>
+            <ul class="filter-option-list">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                <label for="filter-swimming-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Паркинг</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="type-of-housing">
+            <legend>Тип жилья:</legend>
+            <ul class="filter-option-list">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
-            <input class="price-range" type="range" id="dayscount" name="dayscount" min="0" max="3000" step="1">
-            <button class="but-show" type="submit">Показать</button>
-        </fieldset>
-      </form>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
     </section>
     <section class="found-results">
-      <h2>Найдено:3</h2>
+      <h2>Найдено:<span class="quantity-number">3</span></h2>
       <div class="output-of-result">
         <h3>Сортировка:</h3>
           <ul class="sorting-imputs">
@@ -98,11 +102,15 @@
             <li class="sort-imput">
               <a href="#">По рейтингу</a>
             </li>
-            <li class="sort-up">
-              <a href="#">По возрастанию</a>
+            <li class="sort-up ">
+              <a href="#"><span class="visually-hidden">По возрастанию</span><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                </svg></a>
             </li>
             <li class="sort-down">
-              <a href="#">По убыванию</a>
+              <a class="current" href="#"><span class="visually-hidden">По убыванию</span><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+                </svg></a>
             </li>
         </ul>
       </div>
