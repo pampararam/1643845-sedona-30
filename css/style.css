@@ -898,11 +898,11 @@ outline-offset: -5px;
 .sort-down path:hover,
 .sort-up path:focus,
 .sort-down path:focus {
-  fill: var(--basic-blue);
+  fill: var(--basic-black);
 }
 .sort-up path:active,
 .sort-down path:active {
-  fill: var(--basic-black);
+  fill: var(--pressing-blue);
   opacity: 100%;
 }
 .sort-up path:target,
@@ -1032,7 +1032,7 @@ outline-offset: -5px;
 
 .button-blue:active {
   background-color: var(--pressing-blue);
-  color:  var(--basic-white) ;
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .button-brown {
@@ -1055,6 +1055,7 @@ outline-offset: -5px;
 
 .button-brown:active {
   background-color: var(--pressing-brown);
+  color:rgba(255, 255, 255, 0.3);
 }
 .hotel-ratings {
  padding: 0px;
