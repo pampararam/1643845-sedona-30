@@ -13,6 +13,7 @@
   --special-grey: #F2F2F2;
   --special-darc-grey: #EBEBEB;
   --special-form-grey: #E5E5E5;
+  --blue-boot-active: #ffffff4d;
 }
 
 body {
@@ -35,10 +36,10 @@ body {
 }
 
 .body-container {
-width: 1200px;
-margin: 0 auto;
-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
-background-color: var(--basic-white);
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+  background-color: var(--basic-white);
 
 }
 a {
@@ -67,8 +68,11 @@ img {
 .site-navigation  {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+  align-items: center;
+  justify-items: center;
   width:100%;
   margin: 0px;
   padding: 0px;
@@ -77,6 +81,7 @@ img {
   list-style: none;
   margin: 0px;
   padding: 15px 0px;
+  display: block;
   width: 20%;
 }
 .site-navigation li:first-child,
@@ -89,6 +94,7 @@ img {
 }
 .site-navigation li:nth-child(2) {
   margin-left: 16.5px;
+  margin-right: auto;
 }
 .site-navigation li:nth-child(3) {
   margin-left: auto;
@@ -156,23 +162,32 @@ img {
 }
 
 .first-reason {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0px;
   padding: 0px;
   width: 1200px;
-  height: 256px;
+  min-height: 256px;
 }
 .first-reason-text {
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: start;
   align-self: flex-start;
   margin: 0px;
-  padding-top: 29px;
+  width: 400px;
+  padding: 29px 49px 40px 49px;
+  height: auto;
 }
 .first-reason-img {
   margin:0px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 .first-reason,
 .second-reason {
@@ -203,27 +218,79 @@ img {
  margin: 0px;
  padding: 0px;
  width: 1200px;
- height: 330px;
+ min-height: 330px;
 }
 
 .recommendation-list {
  display: flex;
  justify-content: space-between;
+ flex-wrap: wrap;
+ align-items: center;
  margin: 0px;
+ padding: 0px;
+ min-height: 330px;
  color: var(--basic-text-grey);
  list-style: none;
  text-align: center;
  outline-offset: -5px;
- margin-left: 37px;
+ margin-left: 73px;
  margin-right: 63px;
+ position: relative;
 }
 
 .recommendation-name {
   font-size: 21px;
   line-height: 21px;
   font-style: bold;
+  position: relative;
+  margin: 0px;
+  padding-left: 0px;
+  align-self: center;
+}
+.house {
+  position: relative;
+}
+.house::after {
+  content: "";
+  display: block;
+  background-image: url("../img/house.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  margin-top: 30px;
+  position: absolute;
+  top: -117px;
+  left: -3px;
+
+}
+.burger {
+  position: relative;
+}
+.burger::before {
+  content: "";
+  display: block;
+  background-image: url("../img/present.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 70px;
+  position: absolute;
+  top: -105px;
+  left: 112px;
+  margin-top: 20px;
 }
 
+.present::before {
+  content: "";
+  display: block;
+  background-image: url("../img/burger.svg");
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 77px;
+  margin-top: 20px;
+  position: absolute;
+  top: 37px;
+  right: 103px;
+}
 .recommendation-item:nth-child(2) {
   font-size: 14px;
   line-height: 21px;
@@ -232,7 +299,7 @@ img {
 
 .recommendation-item {
   display: grid;
-  grid-template-rows: 1fr min-content min-content;
+  grid-template-rows: 1fr 1fr;
   justify-items: center;
   align-items: center;
   margin-top: 60px;
@@ -242,10 +309,7 @@ img {
   height:70px;
   margin: 0px;
 }
-.recommendation-name {
-  align-self: center;
-  padding-top: 10px;
-}
+
 .recommendation-info{
   margin: 0px;
   padding-top: 9px;
@@ -268,15 +332,28 @@ img {
 }
 
 .second-reason {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  justify-content: flex-start;
   width: 1200px;
-  height: 256px;
+  min-height: 256px;
   margin:0px;
   padding: 0px;
   padding-left: 2px;
+  width: 100%;
+}
+.second-reason img {
+  margin:0px;
+  max-width: 100%;
+  height:auto;
+  display: block;
+  object-fit: cover;
+  margin: 0px;
+  padding: 0px;
 }
 .second-reacon-text {
+  box-sizing: border-box;
+  justify-self: center;
+  width: 400px;
   order: 1;
   margin: 0px;
   padding: 0px;
@@ -355,7 +432,7 @@ img {
 }
 .button {
   position: relative;
-  bottom: -5px;
+  bottom: -10px;
 }
 
 .button,
@@ -375,13 +452,25 @@ img {
   outline: none;
 }
 
+.map-img {
+  background-image: url("img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 594px;
+  width: 1199px;
+  margin-bottom: -120px;
+}
+
 .page-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 1200px;
   height: 120px;
   margin: 0px;
+  padding: 0px;
+  z-index: 2;
+  background-color:rgba(255, 255, 255, 0.9);
 }
 
 .contacts {
@@ -397,12 +486,13 @@ img {
 
 .contact-hashteg {
   margin: 0px;
+  padding-bottom: 10px;
   color: var(--basic-black);
 }
 
 .telephone {
   color: var(--basic-black);
-  margin-top: 10px;
+
 }
 .social-contact {
   margin: 0px;
@@ -414,6 +504,8 @@ img {
   justify-content: space-between;
   width: 150px;
   margin: 0px;
+  margin-left: 169px;
+  margin-right: 190px;
   padding: 0px;
 }
 
@@ -482,7 +574,7 @@ img {
   grid-template-rows: 1fr 1fr 1fr 2fr;
   height: 395px;
   margin: 55px;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 .date-part:nth-child(2) {
   top: -10px;
@@ -670,18 +762,20 @@ img {
   background-image: url("../img/background2.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   margin: 0px;
-  height: 217px;
+  min-height: 217px;
 }
 
 .condition-form {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0px;
   padding-right: 73px;
   padding-top: 26px;
   padding-left: 62px;
-
+  height: auto;
 }
 
 .filtr-checkbox {
@@ -708,18 +802,38 @@ img {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
 }
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: -38px;
-  width: 21px;
-  height: 16px;
-  background-image: url("../img/ceckbox-on.svg");
+  top: 0px;
+  left: -42px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+.filter-input-checkbox:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-disablet.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  z-index: 2;
+}
+.filter-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -42px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/disabled-on.svg");
+  background-repeat: no-repeat;
 }
 .infrastructure {
   padding-right: 100px;
@@ -802,28 +916,34 @@ img {
 }
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
   background: #ababab;
   border: 8px solid var(--basic-white);
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle:hover,
+.range-toggle:focus {
+  width: 5px;
+  height: 5px;
+  background: #ababab;
+  border: 10px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 .range-toggle-min {
@@ -1085,7 +1205,7 @@ img {
 
 .button-blue:active {
   background-color: var(--pressing-blue);
-  color:rgba(255, 255, 255, 0.3);
+  color: var(--blue-boot-active);
 }
 
 .button-brown {
@@ -1108,7 +1228,7 @@ img {
 
 .button-brown:active {
   background-color: var(--pressing-brown);
-  color:rgba(255, 255, 255, 0.3);
+  color: var(--blue-boot-active);
 }
 .hotel-ratings {
  padding: 0px;
