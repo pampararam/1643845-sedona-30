@@ -435,6 +435,8 @@ img {
   font-weight: 700;
   padding-left: 10px;
   padding-right: 10px;
+  border: none;
+  outline: none;
 }
 .button {
   position: relative;
@@ -452,12 +454,16 @@ img {
   border: none;
 }
 
-.button-hover:hover {
+.button-hover:hover,
+.button-hover:focus {
   background-color: var(--hover-brown);
   border: none;
   outline: none;
 }
-
+.button-hover:target {
+  border: none;
+  outline: none;
+}
 .map-img  {
   margin-bottom: -120px;
   width: 1199px;
