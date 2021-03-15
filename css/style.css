@@ -233,10 +233,8 @@ img {
 }
 
 .recommendation-list {
- display: flex;
- justify-content: space-between;
- flex-wrap: wrap;
- align-items: center;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
  margin: 0px;
  padding: 0px;
  min-height: 330px;
@@ -244,86 +242,66 @@ img {
  list-style: none;
  text-align: center;
  outline-offset: -5px;
- margin-left: 72px;
- margin-right: 63px;
- position: relative;
+ margin-left: 0px;
+ margin-right: 0px;
 }
-
+.recommendation-item {
+  text-align: center;
+  position: relative;
+}
+.recommendation-info{
+  margin-top: 25px;
+  padding-bottom: 39px;
+}
 .recommendation-name {
   font-size: 21px;
   line-height: 21px;
   font-style: bold;
-  position: relative;
   margin: 0px;
-  padding-left: 0px;
-  align-self: center;
-  margin-top: 100px;
+  margin-top: 160px;
   margin-bottom: 0px;
 }
-.house {
-  position: relative;
-}
-.house::after {
+.house::before {
   content: "";
-  display: block;
   background-image: url("../img/house.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
   width: 75px;
   height: 72px;
   position: absolute;
-  top: -99px;
-  left: 88px;
+  top: 62px;
+  left: 161px;
 
-}
-.burger {
-  position: relative;
 }
 .burger::before {
   content: "";
-  display: block;
+  position: absolute;
   background-image: url("../img/present.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
   width: 75px;
   height: 70px;
-  position: absolute;
-  top: 0px;
-  left: 113px;
-  margin-top: 20px;
+
+  top: 62px;
+  left: 160px;
 }
-.present {
-  position: relative;
-}
+
 .present::before {
   content: "";
-  display: block;
+  position: absolute;
   background-image: url("../img/burger.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
   width: 64px;
   height: 77px;
-  margin-top: 20px;
-  position: absolute;
-  top: -5px;
-  right: 103px;
+  top: 55px;
+  right: 169px;
 }
 .recommendation-item:nth-child(2) {
   font-size: 14px;
   line-height: 21px;
-  padding-left: 6px;
 }
 
-.recommendation-item {
-  padding-top: 16px;
-  display: grid;
-  grid-template-rows: min-content min-content;
-  justify-content: start;
-  padding-bottom: 40px;
-  padding-left: 3px;
-}
-.recommendation-info{
-  margin: 0px;
-  padding-top: 28px;
-
-}
 .reason-item {
   list-style: none;
   width: 400px;
@@ -448,12 +426,12 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin: 0px;
+  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
   box-sizing: border-box;
-  bottom: -10px;
+  bottom: -13px;
   border: none;
   outline: none;
 }
