@@ -16,7 +16,7 @@ try {
   isStorageSupport = false;
 }
 
-searchForm.classList.add(".search-hotel-form");
+searchForm.classList.add(".search-form-close");
 
 openSearchFormButton.addEventListener("click", function() {
   searchForm.classList.toggle("search-form-close");

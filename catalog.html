@@ -8,6 +8,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="img/favicon180.ico">
   <link rel="manifest" href="manifest.webmanifest">
+  <link href="normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="catalog-container">
@@ -46,7 +47,7 @@
               </li>
               <li class="filter-option" >
                 <input class="visually-hidden filter-input-checkbox filter-input" tabindex="0" type="checkbox" name="parking" id="filter-parking" >
-                <label for="filter-parking" >Паркинг</label>
+                <label for="filter-parking" >Парковка</label>
               </li>
               <li class="filter-option" >
                 <input class="visually-hidden filter-input-checkbox filter-input" tabindex="0" type="checkbox" name="wi-fi" id="filter-wi-fi">
@@ -78,7 +79,7 @@
             <label class="min-price">от <input type="text" name="min-price" value="0" tabindex="0"></label>
             <label class="max-price">до <input type="text" name="max-price" value="3000" tabindex="0"></label>
           </div>
-          <div class="range-controls">
+          <div class="range-controls" aria-label="выберите диапазон стоимости">
             <div class="scale">
               <div class="bar"></div>
             </div>
@@ -136,9 +137,9 @@
           </div>
           <div class="hotel-ratings">
             <div class="star">
-              <img src="img/4star.svg" alt="рейтинг 4 звезды" aria-label="рейтинг гостиницы 4 звезды">
+              <img src="img/4star.svg" alt="рейтинг 4 звезды" aria-label="рейтинг гостиницы 4 звезды" width="91px" height="17px">
             </div>
-            <p class="rating">Рейтинг:8,5</p>
+            <p class="rating">Рейтинг: 8,5</p>
           </div>
         </li>
         <li class="searched-item">
@@ -159,9 +160,9 @@
           </div>
           <div class="hotel-ratings">
             <div class="star">
-              <img src="img/3star.svg" alt="рейтинг 3 звезды" aria-label="рейтинг мотеля 3 звезды">
+              <img src="img/3star.svg" alt="рейтинг 3 звезды" aria-label="рейтинг мотеля 3 звезды" width="66px" height="17px">
             </div>
-            <p class="rating">Рейтинг:8,9</p>
+            <p class="rating">Рейтинг: 8,9</p>
           </div>
         </li>
         <li class="searched-item">
@@ -182,9 +183,9 @@
           </div>
           <div class="hotel-ratings">
             <div class="star">
-              <img src="img/2star.svg" alt="рейтинг 2 звезды" aria-label="рейтинг аппартаментов 2 звезды">
+              <img src="img/2star.svg" alt="рейтинг 2 звезды" aria-label="рейтинг аппартаментов 2 звезды" width="42px" height="17px">
             </div>
-            <p class="rating">Рейтинг:9.2</p>
+            <p class="rating">Рейтинг: 9.2</p>
           </div>
         </li>
       </ul>
