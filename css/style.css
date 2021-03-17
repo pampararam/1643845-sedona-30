@@ -376,10 +376,11 @@ img {
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 0px;
-  margin-left: 4px;
+  margin-left: 2px;
+  padding-bottom: 20px;
 }
 .reason-item h2 {
-  padding-top: 44px;
+  padding-top: 45px;
   margin: 0px;
 }
 .reason-item p {
@@ -654,14 +655,17 @@ img {
   border: none;
   outline: none;
   background-color: var(--special-input);
-
 }
 
-.date-part input:hover {
+.date-part input:hover,
+.people-adult input:hover,
+.people-children input:hover {
   background-color: var(--special-darc-grey);
 }
 
-.date-part input:focus {
+.date-part input:focus,
+.people-adult input:focus,
+.people-children input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-form-grey);
 }
@@ -712,7 +716,7 @@ img {
   width: 346px;
   height: 38px;
 }
-input::placeholder {
+.date-part input::placeholder {
   color: var(--basic-black);
 }
 .number-of-people input {
@@ -756,6 +760,7 @@ input::placeholder {
   background-color: var(--special-input);
   outline: none;
 }
+
 .people-adult {
   display: inline-block;
   vertical-align: baseline;
@@ -824,8 +829,33 @@ input::placeholder {
 .minus:hover {
   background-image: var(--basic-black);
 }
+.modal-error {
+  animation: shake 0.8s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 .visually-hidden:not(:focus):not(:active),
- input[type="checkbox"].visually-hidden {
+.filter-option input[type="checkbox"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -918,9 +948,9 @@ input::placeholder {
 .filter-input-checkbox:checked:disabled + label::before {
   content: "";
   position: absolute;
-  left: -45px;
-  top: 0;
-  width: 23px;
+  top: 0px;
+  left: -38px;
+  width: 27px;
   height: 23px;
   background-image: url("../img/disabled-on.svg");
   background-repeat: no-repeat;
@@ -931,7 +961,7 @@ input::placeholder {
   content: "";
   position: absolute;
   top: 0px;
-  left: -45px;
+  left: -38px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-off-disablet.svg");
@@ -1120,6 +1150,7 @@ input::placeholder {
 }
 
 .output-of-result h3 {
+  font-family: inherit;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -1133,7 +1164,7 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
   margin: 0px;
   position: relative;
 }
@@ -1144,15 +1175,20 @@ input::placeholder {
   margin-left: 32px;
   margin-right: 33px;
 }
+.sort-imput {
+  margin-top: 2px;
+}
 .sort-imput a {
   color: var(--basic-black);
   opacity: 30%;
   text-decoration: underline;
   text-decoration-style: dashed;
   text-decoration-color: var(--basic-blue);
-
 }
-
+.current a {
+  color: var(--basic-blue);
+  text-decoration: none;
+}
 .sort-imput a:hover {
   color: var(--basic-blue);
 }
@@ -1168,7 +1204,6 @@ input::placeholder {
 }
 .sort-down svg {
   margin-left: 22px;
-
 }
 
 .sort-up svg,
@@ -1196,10 +1231,6 @@ input::placeholder {
 .sort-down path:target,
 .current path{
   fill: var(--pressing-blue);
-}
-.current a {
-  color: var(--basic-blue);
-  text-decoration: none;
 }
 
 .searched-list {
@@ -1249,7 +1280,8 @@ input::placeholder {
 }
 .hotel-card {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr min-content min-content;
+  max-width: 650px;
 }
 .odject-price {
   display: flex;
@@ -1263,7 +1295,8 @@ input::placeholder {
   display: block;
   margin: 0px;
   padding: 0px;
-  padding-bottom: 0px;
+  padding-top: 8px;
+  padding-bottom: 13px;
 }
 
 .odject-price p:first-child{
@@ -1346,15 +1379,15 @@ input::placeholder {
 }
 .hotel-ratings {
  padding: 0px;
- align-self: flex-end;
- margin: 0px;
+ align-self: center;
+ margin:  0px;
  padding: 0px;
  position: relative;
 }
-.hotel-ratings p{
+.hotel-ratings p {
   font-family: inherit;
   margin: 0px;
-  margin-bottom: 7px;
+  margin-top: 65px;
   margin-right: 3px;
   padding: 3px 12px 3px 15px;
   background-color: var(--special-form-grey);
@@ -1362,6 +1395,6 @@ input::placeholder {
 
 .star {
   position: absolute;
-  top: -64px;
+  top: 0px;
   right: 0px;
 }
