@@ -724,6 +724,7 @@ img {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+  color: var(--basic-black);
   border: none;
   outline: none;
 }
@@ -760,7 +761,10 @@ img {
   background-color: var(--special-input);
   outline: none;
 }
-
+.people-adult  input::placeholder,
+.people-children input::placeholder {
+  color: var(--basic-black);
+}
 .people-adult {
   display: inline-block;
   vertical-align: baseline;
