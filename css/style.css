@@ -1083,6 +1083,7 @@ img {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--special-black);
   cursor: pointer;
+  outline: none;
 }
 .range-toggle-min {
   left: 0;
